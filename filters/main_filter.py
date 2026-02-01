@@ -15,7 +15,6 @@ class Key_words(BaseFilter):
                 self.key_words_base = [word.lower() for word in key_words]
                 self.key_words = [word[0:-1] for word in self.key_words_base]
                 self.len_words = [len(word) for word in self.key_words]
-                print("обработка завершина")
             except Exception:
                 log.exception("Произошла ошибка при обработке списка с ключевыми словами")
                 return False
@@ -26,7 +25,6 @@ class Key_words(BaseFilter):
         try:
             text = message.text.lower()
             text_list = text.translate(str.maketrans("","",string.punctuation)).split()
-            print(text_list,self.key_words_base,self.key_words,self.len_words)
         except Exception:
             log.exception("Произошла ошибка при обработке данных")
             return False
