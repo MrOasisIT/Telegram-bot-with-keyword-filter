@@ -6,7 +6,8 @@
  * python-dotenv
 ## Установка
  * Склонируйте репозиторий:
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/MrOasisIT/Telegram-bot-with-keyword-filter/tree/main.git)
+   git clone [https://github.com/yourusername/your-repo-name.git]
+   (https://github.com/MrOasisIT/Telegram-bot-with-keyword-filter/tree/main.git)
 
  * Создайте и активируйте виртуальное окружение:
    python -m venv venv
